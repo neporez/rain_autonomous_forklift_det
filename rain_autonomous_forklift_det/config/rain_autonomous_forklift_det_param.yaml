@@ -1,0 +1,33 @@
+/object_detector:
+  ros__parameters:
+
+    # Subscriber
+    pointcloud_sub_topic: /lidar_points
+
+    # Publisher
+    current_pose_pub_topic: /rain/autonomous_forklift/current_pose
+    point_cloud_map_pub_topic: /rain/autonomous_forklift/map_pc
+    object_marker_pub_topic: /rain/autonomous_forklift/obj_marker
+    forklift_path_pub_topic: /rain/autonomous_forklift/forklift_path
+
+    # Fixed Frame
+    point_cloud_map_pub_topic_frame: map
+
+    # Model Setup
+    trt_engine_path: model/checkpoint/warehouse_FP16.engine
+    sample_point_num: 32768
+    filtering_method: depth # depth or random
+    point_cloud_range:
+    - -75.2
+    - -75.2
+    - -5.0
+    - 75.2
+    - 75.2
+    - 3.0
+    visualize_score_threshold: 0.5
+
+    # Scan Matching
+    scan_matching_thread_num: 16
+    scan_matching_map_voxel_size: 0.5
+    scan_matching_map_clear_cycle: 20
+
