@@ -9,6 +9,6 @@ numba==0.59.1
 scikit-image==0.23.2
 fire==0.6.0
 prettytable==3.12.0
-setuptools>=59.8.0
+setuptools==69.0.0
 accelerate==0.14.0
 tqdm==4.65.2
