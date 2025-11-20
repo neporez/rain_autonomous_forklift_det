@@ -29,7 +29,7 @@ def generate_launch_description():
     detector_node = Node(
         package='rain_autonomous_forklift_det',
         executable='rain_autonomous_forklift_det',
-        name='rain_autonomous_forklift_det',
+        name='object_detector',
         output='screen',
         parameters=[rain_forklift_params]
     )
