@@ -2,7 +2,7 @@
   ros__parameters:
 
     # Subscriber
-    pointcloud_sub_topic: /lidar_points
+    point_cloud_sub_topic: /lidar_points
 
     # Publisher
     current_pose_pub_topic: /rain/autonomous_forklift/current_pose
