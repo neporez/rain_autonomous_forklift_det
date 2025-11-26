@@ -41,6 +41,16 @@ mv ~/rain_autonomous_forklift_det/rain_autonomous_forklift_det ~/rain_ws/src
 mv ~/rain_autonomous_forklift_det/RobDet3D ~
 ```
 
+#### Build Small-GICP
+
+cd ~
+git clone https://github.com/koide3/small_gicp.git
+cd small_gicp
+pip install .
+pip install pybind11-stubgen
+cd ~/.local/lib/python3.10/site-packages
+pybind11-stubgen -o . --ignore-invalid=all small_gicp
+
 #### Build CUMM
 
 ```bash
