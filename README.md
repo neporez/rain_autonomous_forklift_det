@@ -92,9 +92,6 @@ make -j4
 
 #### Prepare Dataset and Checkpoint
 
-Download the required files:
-- [Dataset and Checkpoint](https://drive.google.com/drive/folders/1i03jYwg8Uacrsz5wv8MMO7OA7s6m6Zzd?usp=sharing)
-
 ```bash
 cd ~/RobDet3D
 mkdir data
